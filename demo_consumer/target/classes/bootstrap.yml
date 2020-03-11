@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: consumer
+  cloud:
+    config:
+      name: config
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: csm
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka
